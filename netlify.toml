@@ -1,4 +1,6 @@
-# netlify.toml
 [build]
-  command = ""
   publish = "."
+  command = "echo 'No build needed for static site'"
+
+[build.environment]
+  NODE_VERSION = "18.18.2"
