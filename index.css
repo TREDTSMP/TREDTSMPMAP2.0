@@ -1,0 +1,113 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.mouseposition {
+    background-color: white;
+    padding: 3px;
+    text-align: right;
+}
+
+.mousepositioncoord {
+    min-width: 40px;
+    display: inline-block;
+}
+
+div.ol-mouse-position {
+    background-color: white;
+    padding: 6px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ol-ctx-menu-container {
+    font-size: 16px;
+}
+
+.ol-scale-step-text {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-shadow:
+        1px 0 0 black,
+        0 1px 0 black,
+        -1px 0 0 black,
+        0 -1px 0 black;
+}
+
+.ol-scale-singlebar-odd {
+    background: #ddd;
+}
+
+.ol-scale-singlebar-even {
+    background: #444;
+}
+
+.toastify {
+    color: black;
+    background: yellow;
+}
+
+.ol-ctx-menu-container li {
+    padding-left: 20px;
+}
+
+.menuitem-checked::before {
+    content: '☑';
+    width: 20px;
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.menuitem-unchecked::before {
+    content: '☐';
+    width: 20px;
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: #fefefe;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.side-panel.active {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  border: none;
+  background: none;
+  float: right;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#image-gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
