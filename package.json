@@ -1,0 +1,16 @@
+{
+  "name": "tredtsmp-map",
+  "version": "1.0.0",
+  "description": "Unmined map for TREDTSMP",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step needed.'"
+  },
+  "author": "TREDTSMP",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
